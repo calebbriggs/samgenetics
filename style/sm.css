@@ -1,0 +1,103 @@
+.sm-header {
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    max-height: 124px;
+    height: 124px;
+    min-height: 124px;
+    padding: 0 24px;
+    overflow: hidden;
+    color: white;
+    background: #12023B;
+}
+.sm-body{
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 124px;
+    background: #DEE8E4;
+    overflow: hidden;
+    min-height: 1020px;
+    font-family: "Arial Black" , Arial, sans-serif;
+    font-size: 15px;
+    color: #12023B;
+}
+.sm-header .header-inner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.sm-header a,
+.sm-header .sm-brand,
+.sm-header .sm-user {
+    flex: 1;
+    color: white;
+}
+.sm-header .sm-brand {
+    display: block;
+    height: 112px;
+    width: 176px;
+    margin: 0;
+    padding: 0;
+    order: -1;
+    text-indent: -9999px;
+    background: url("../images/SamLogo.png") no-repeat;
+    background-size: 112px 112px;
+}
+.sm-header .sm-user {
+    order: 1;
+    text-align: right;
+}
+.sm-nav {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 64px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 15%;
+    padding: 24px;
+    background: #414141;
+    color: white;
+}
+.sm-nav a {
+    color: white;
+    text-decoration: none;
+}
+.sm-nav ul {
+    width: 100%;
+}
+.sm-nav li {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    min-height: 48px;
+    max-height: 48px;
+    overflow: hidden;
+}
+.sm-nav li:hover {
+    background: #616161;
+}
+.sm-nav li.active {
+    background: #202020;
+}
+.sm-nav li a {
+    display: flex;
+    flex: 1;
+    align-self: center;
+    min-height: 48px;
+    max-height: 48px;
+}
+.sm-nav li a .sm-nav-icon {
+    max-width: 48px;
+    min-width: 48px;
+    text-align: center;
+}
+.sm-nav li a span {
+    align-self: center;
+}
